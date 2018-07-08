@@ -20,6 +20,7 @@ from .views import CreateUserView,create_post,HomeView,PostDetailView,MyPostsVie
 
 urlpatterns = [
     path('', TemplateView.as_view(template_name='app/homepage.html'),name='homepage'),
+    path('about/', TemplateView.as_view(template_name='app/about.html'),name='about'),
     path('catchup/', HomeView.as_view(),name='home'),
     path('myposts/', MyPostsView.as_view(),name='myposts'),
     path('details/<int:pk>', PostDetailView.as_view(),name='details'),

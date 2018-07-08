@@ -57,6 +57,7 @@
           <li class="nav-item active" style="list-style: none">
       <h3>  <a class="nav-link" href="{% url 'logout' %}">Logout <span class="sr-only"></span></a></h3>
       </li>
+
       {% else %}
 
       <li class="nav-item active" style="list-style: none">
@@ -68,6 +69,10 @@
 
 
       {% endif %}
+
+          <li class="nav-item active" style="list-style: none">
+      <h3>  <a class="nav-link" href="{% url 'about' %}">About <span class="sr-only"></span></a></h3>
+      </li>
     </form>
   </div>
 </nav>
